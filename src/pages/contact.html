@@ -1,0 +1,81 @@
+---
+title: Contact — offerte aanvragen bij Wesley's Ambacht
+description: Vraag een offerte aan voor catering, een borrel, broodjes of de vergaderruimte in Stellendam. Bel, mail of app. We reageren binnen één werkdag.
+current: contact
+jsonld: 1
+---
+<section class="sec" style="padding-top:clamp(8rem,14vw,11rem)" aria-labelledby="kop">
+  <div class="wrap">
+    <div class="sec__kop">
+      <p class="kicker" data-reveal>Contact</p>
+      <h1 class="h-xxl" id="kop" data-split>Vertel ons wat je viert</h1>
+      <p class="lead" data-reveal>Voor catering, een borrel, broodjes of de vergaderruimte. Bel, mail of stuur een aanvraag via het formulier. We reageren binnen één werkdag.</p>
+    </div>
+    <div class="tweekol">
+      <div>
+        <h2 class="disp h-m" style="margin-bottom:1.6rem" data-reveal>Offerte aanvragen</h2>
+        <form class="form" id="aanvraag" novalidate data-reveal>
+          <div class="veld"><label for="naam">Naam</label><input id="naam" name="naam" autocomplete="name" required aria-describedby="fout-naam"><span class="fout" id="fout-naam" role="alert"></span></div>
+          <div class="veld"><label for="telefoon">Telefoon</label><input id="telefoon" name="telefoon" type="tel" autocomplete="tel" aria-describedby="fout-telefoon"><span class="fout" id="fout-telefoon" role="alert"></span></div>
+          <div class="veld vol"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" aria-describedby="fout-email"><span class="fout" id="fout-email" role="alert"></span></div>
+          <div class="veld"><label for="datum">Datum of gelegenheid</label><input id="datum" name="datum" placeholder="Bijvoorbeeld 14 juni, verjaardag"></div>
+          <div class="veld"><label for="personen">Aantal personen</label><input id="personen" name="personen" inputmode="numeric"></div>
+          <div class="veld vol"><label for="onderwerp">Waar wil je mee beginnen?</label>
+            <select id="onderwerp" name="onderwerp" required aria-describedby="fout-onderwerp">
+              <option value="">Kies een optie</option>
+              <option value="catering">Catering op locatie (BBQ, buffet of hapjes)</option>
+              <option value="broodjes">Broodjeslunch</option>
+              <option value="borrelplank">Borrelplank of vleespakket</option>
+              <option value="vergaderen">Vergaderruimte met uitzicht</option>
+              <option value="feest">Feest of partij in de Ambachtswinkel</option>
+              <option value="onbekend">Ik weet het nog niet</option>
+            </select><span class="fout" id="fout-onderwerp" role="alert"></span></div>
+          <div class="veld vol"><label for="bericht">Bericht</label><textarea id="bericht" name="bericht"></textarea></div>
+          <div class="vol"><button class="knop" type="submit">Controleer je aanvraag {{> pijl}}</button></div>
+        </form>
+        <div class="overzicht" id="overzicht" tabindex="-1" hidden>
+          <h2 class="disp h-m">Controleer je aanvraag</h2>
+          <p class="muted" style="margin-top:.8rem">Kies hoe je hem verstuurt: per e-mail of via WhatsApp. Op deze website wordt niets verstuurd of opgeslagen.</p>
+          <dl id="overzicht-lijst"></dl>
+          <div class="acties">
+            <a class="knop" id="stuur-mail" href="mailto:info@ambachtswinkel.nl">Verstuur per e-mail {{> pijl}}</a>
+            <a class="knop knop--lijn" id="stuur-wa" href="https://wa.me/31639581128" target="_blank" rel="noopener">Verstuur via WhatsApp</a>
+            <button class="knop knop--lijn" id="wijzig" type="button">Wijzig je aanvraag</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 class="disp h-m" style="margin-bottom:1.6rem" data-reveal>Direct contact</h2>
+        <div class="direct" data-reveal>
+          <a href="tel:+31639581128"><small>Telefoon</small><span>+31 6 39 58 11 28</span></a>
+          <a href="mailto:info@ambachtswinkel.nl"><small>E-mail</small><span style="font-size:clamp(1.1rem,2vw,1.6rem)">info@ambachtswinkel.nl</span></a>
+          <a href="https://wa.me/31639581128" target="_blank" rel="noopener"><small>WhatsApp</small><span>Stuur een bericht</span></a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Meester+Snijderweg+5%2C+3251+LJ+Stellendam" target="_blank" rel="noopener"><small>Adres</small><span style="font-size:clamp(1.1rem,2vw,1.6rem)">Meester Snijderweg 5 (voorzijde)<br>3251 LJ Stellendam</span></a>
+        </div>
+        <div class="gegevens" style="grid-template-columns:1fr;margin-top:2.4rem" data-reveal>
+          <div><h3>Openingstijden</h3><dl class="uren"><dt>Dinsdag t/m vrijdag</dt><dd>10:00 tot 18:00</dd><dt>Zaterdag</dt><dd>10:00 tot 18:00</dd><dt>Zondag en maandag</dt><dd>Gesloten</dd></dl></div>
+        </div>
+        <ul class="belofte" style="margin-top:2.4rem">
+          <li data-reveal><b>Antwoord binnen één werkdag</b><span>Je belt of mailt, en dezelfde of de volgende werkdag hoor je van ons terug.</span></li>
+          <li data-reveal><b>Een offerte op maat</b><span>Met wat we doen, in welke volgorde en wat het kost. Zonder verrassingen achteraf.</span></li>
+          <li data-reveal><b>Geen verrassingen</b><span>Alles is inclusief btw. Wat er niet bij zit, rekenen wij apart af en zeggen het vooraf.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--haven" aria-labelledby="stap-kop">
+  <div class="wrap">
+    <div class="sec__kop">
+      <p class="kicker" data-reveal>Zo gaat het</p>
+      <h2 class="h-xl" id="stap-kop" data-split>Wat er daarna gebeurt</h2>
+    </div>
+    <div class="stappen">
+      <span class="stappen__lijn" aria-hidden="true"></span>
+      <div class="stap" data-reveal><div class="stap__nr">01</div><h3>Je stuurt je aanvraag</h3><p>Hoe uitgebreider je vraag, hoe gerichter ons antwoord.</p></div>
+      <div class="stap" data-reveal><div class="stap__nr">02</div><h3>We bellen binnen één werkdag</h3><p>We vragen door tot we weten wat je wilt en hoeveel mensen er komen.</p></div>
+      <div class="stap" data-reveal><div class="stap__nr">03</div><h3>Je krijgt een offerte</h3><p>Inclusief wat we doen, in welke volgorde en wat het kost.</p></div>
+    </div>
+  </div>
+</section>

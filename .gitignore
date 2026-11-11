@@ -1,0 +1,7 @@
+# Tool- en scratchbestanden
+.gg/
+
+# Systeem
+.DS_Store
+Thumbs.db
+__pycache__/

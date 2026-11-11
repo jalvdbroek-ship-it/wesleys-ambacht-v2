@@ -90,6 +90,8 @@ body::after{content:"";position:fixed;inset:0;z-index:150;pointer-events:none;op
 .menu.is-open a.menu__link{transform:none;opacity:1;transition-delay:calc(var(--i)*60ms + .15s)}
 .menu__voet{display:grid;gap:.4rem;color:var(--rook);font-size:.95rem}
 body.menu-open{overflow:hidden}
+.nav__links a,.nav .knop{white-space:nowrap}
+@media(max-width:1340px){.nav .status{display:none}}
 @media(max-width:1040px){.nav__links,.nav .status,.nav .knop{display:none}.nav__toggle{display:block}}
 .melding{position:fixed;inset:0 0 auto 0;z-index:110;background:var(--vuur);color:#fff;text-align:center;padding:.6rem var(--pad);font-size:.9rem;font-weight:600}
 .melding[hidden]{display:none}
